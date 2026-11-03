@@ -1,0 +1,192 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="A quick, friendly guide to Hartford, Connecticut: its food, local facts, governor, and state bird."
+    />
+    <title>Hartford, Connecticut — A Little City Guide</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="wordmark" href="#top" aria-label="Hartford, back to top">
+        <span class="wordmark-mark" aria-hidden="true">H</span>
+        <span>Hartford <span class="wordmark-state">/ Connecticut</span></span>
+      </a>
+      <nav class="top-nav" aria-label="Main navigation">
+        <a href="#food">Food</a>
+        <a href="#facts">Quick facts</a>
+        <a href="#bird">State bird</a>
+        <a href="#likes">Your list</a>
+      </nav>
+    </header>
+
+    <main id="top">
+      <section class="hero" aria-labelledby="page-title">
+        <div class="hero-copy">
+          <p class="eyebrow"><span class="eyebrow-dot"></span> A little city guide</p>
+          <h1 id="page-title">Meet<br /><span>Hartford.</span></h1>
+          <p class="hero-description">
+            Connecticut’s capital has a big-story past, a lively food scene, and
+            plenty of local character packed beside the river.
+          </p>
+          <a class="text-link" href="#facts">
+            Get to know the city <span aria-hidden="true">↓</span>
+          </a>
+        </div>
+        <div class="hero-art" aria-hidden="true">
+          <div class="sun-disc"></div>
+          <div class="river-line river-line-one"></div>
+          <div class="river-line river-line-two"></div>
+          <span class="hero-coordinate">41° 45′ N<br />72° 41′ W</span>
+          <span class="hero-caption">Connecticut’s capital city</span>
+          <span class="hero-stamp">EST.<br /><strong>1635</strong></span>
+        </div>
+      </section>
+
+      <section class="facts-section page-section" id="facts" aria-labelledby="facts-title">
+        <div class="section-heading">
+          <p class="eyebrow">The short version</p>
+          <h2 id="facts-title">Hartford at a glance</h2>
+        </div>
+        <ul class="facts-list">
+          <li class="fact-card">
+            <span class="fact-number">01</span>
+            <span class="fact-label">Known as</span>
+            <strong>Insurance Capital<br />of the World</strong>
+          </li>
+          <li class="fact-card">
+            <span class="fact-number">02</span>
+            <span class="fact-label">Population</span>
+            <strong>121,981</strong>
+            <span class="fact-note">2025 Census estimate</span>
+          </li>
+          <li class="fact-card">
+            <span class="fact-number">03</span>
+            <span class="fact-label">Connecticut became a state</span>
+            <strong>1788</strong>
+          </li>
+        </ul>
+        <p class="source-note">
+          Population: <a href="https://www.census.gov/quickfacts/fact/table/hartfordcityconnecticut/NES010223" target="_blank" rel="noreferrer">U.S. Census Bureau</a>
+          <span aria-hidden="true">·</span>
+          Statehood: <a href="https://portal.ct.gov/about/general-description-and-facts" target="_blank" rel="noreferrer">CT.gov</a>
+          <span aria-hidden="true">·</span>
+          Nickname: <a href="https://impact.uconn.edu/hartford" target="_blank" rel="noreferrer">University of Connecticut</a>
+        </p>
+      </section>
+
+      <section class="food-section page-section" id="food" aria-labelledby="food-title">
+        <div class="food-image-wrap">
+          <img
+            class="food-image"
+            src="images/pernil.jpg"
+            alt="A plate of Puerto Rican pernil with rice and pigeon peas and golden fried plantains."
+            loading="lazy"
+          />
+          <span class="image-label">A taste of Hartford</span>
+        </div>
+        <div class="food-copy">
+          <p class="eyebrow">On the table</p>
+          <h2 id="food-title">Puerto Rican<br />comfort food</h2>
+          <p>
+            Hartford’s Puerto Rican food scene is a point of local pride. Pernil
+            — pork roasted until tender with crisp, golden skin — is a beloved
+            dish to look for, often served with arroz con gandules and sweet
+            plantains.
+          </p>
+          <p class="food-footnote">Slow-roasted, shared, and full of flavor.</p>
+        </div>
+      </section>
+
+      <section class="leader-section page-section" aria-labelledby="leader-title">
+        <div class="leader-mark" aria-hidden="true">CT</div>
+        <div>
+          <p class="eyebrow">Leading the state</p>
+          <h2 id="leader-title">Ned Lamont</h2>
+          <p class="leader-title">Governor of Connecticut</p>
+        </div>
+        <a
+          class="leader-link"
+          href="https://portal.ct.gov/governor/home/about/governor-ned-lamont"
+          target="_blank"
+          rel="noreferrer"
+        >
+          Meet the governor <span aria-hidden="true">↗</span>
+        </a>
+      </section>
+
+      <section class="bird-section page-section" id="bird" aria-labelledby="bird-title">
+        <div class="bird-copy">
+          <p class="eyebrow">A state symbol</p>
+          <h2 id="bird-title">Say hello to<br />the robin.</h2>
+          <p>
+            The American robin has been Connecticut’s official state bird since
+            1943. Give the picture a tap to see it take a little hop.
+          </p>
+          <a
+            class="small-source-link"
+            href="https://portal.ct.gov/about/state-symbols/the-state-bird"
+            target="_blank"
+            rel="noreferrer"
+          >State bird details <span aria-hidden="true">↗</span></a>
+        </div>
+        <figure class="bird-figure">
+          <button
+            class="bird-button"
+            id="bird-button"
+            type="button"
+            aria-label="Make the American robin hop"
+          >
+            <img
+              class="bird"
+              id="state-bird"
+              src="images/american-robin.jpg"
+              alt="An American robin with an orange-red breast perched on a branch."
+              loading="lazy"
+            />
+          </button>
+          <figcaption>Connecticut’s state bird</figcaption>
+        </figure>
+      </section>
+
+      <section class="likes-section page-section" id="likes" aria-labelledby="likes-title">
+        <div class="likes-intro">
+          <p class="eyebrow">Make it yours</p>
+          <h2 id="likes-title">Things I like<br />about Hartford</h2>
+          <p>Add a favorite place, memory, or little detail to your list.</p>
+        </div>
+        <div class="likes-panel">
+          <form id="likes-form" class="likes-form">
+            <label for="like-input">One thing you like</label>
+            <div class="input-row">
+              <input
+                id="like-input"
+                name="like"
+                type="text"
+                placeholder="The river, a café, a sunny afternoon…"
+                autocomplete="off"
+              />
+              <button class="add-button" type="submit">Add</button>
+            </div>
+          </form>
+          <p class="likes-empty" id="likes-empty">Your list is ready for its first favorite.</p>
+          <ul class="likes-list" id="likes-list" aria-live="polite"></ul>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <a class="wordmark footer-wordmark" href="#top">
+        <span class="wordmark-mark" aria-hidden="true">H</span>
+        <span>Hartford <span class="wordmark-state">/ Connecticut</span></span>
+      </a>
+      <p>A small guide to a city with a lot to share.</p>
+      <a class="back-to-top" href="#top">Back to top ↑</a>
+    </footer>
+  </body>
+</html>
