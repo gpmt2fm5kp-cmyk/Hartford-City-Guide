@@ -1,0 +1,10 @@
+{
+  "name": "@workspace/hartford-guide",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "python3 -m http.server ${PORT:-26067} --bind 0.0.0.0 --directory ../..",
+    "build": "rm -rf dist/public && mkdir -p dist/public && cp ../../index.html ../../style.css ../../script.js dist/public/ && cp -R ../../images dist/public/"
+  }
+}

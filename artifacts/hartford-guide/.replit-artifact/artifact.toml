@@ -1,0 +1,28 @@
+kind = "web"
+previewPath = "/"
+title = "Hartford City Guide"
+description = "A phone-friendly static city guide to Hartford, Connecticut, built from plain HTML, CSS, and vanilla JavaScript."
+version = "1.0.0"
+id = "artifacts/hartford-guide"
+router = "path"
+
+[[services]]
+name = "web"
+paths = [ "/" ]
+localPort = 26067
+
+[services.development]
+run = "pnpm --filter @workspace/hartford-guide run dev"
+
+[services.production]
+build = [ "pnpm", "--filter", "@workspace/hartford-guide", "run", "build" ]
+serve = "static"
+publicDir = "artifacts/hartford-guide/dist/public"
+
+[[services.production.rewrites]]
+from = "/*"
+to = "/index.html"
+
+[services.env]
+PORT = "26067"
+BASE_PATH = "/"
